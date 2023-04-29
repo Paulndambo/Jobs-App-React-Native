@@ -17,7 +17,7 @@ const useFetch = (endpoint, query) => {
         url: `https://jsearch.p.rapidapi.com/${endpoint}`,
         headers: {
             'content-type': 'application/octet-stream',
-            'X-RapidAPI-Key': "1543f672famsh26de0be26ebcb69p170f5ajsn93e94ff39b32",
+            'X-RapidAPI-Key': "0ca636493dmsh64a05d2c6f67558p187791jsn6560a9ba31f0",
             'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
         },
         params: { ...query},
@@ -28,7 +28,7 @@ const useFetch = (endpoint, query) => {
         setIsLoading(true);
         try {
             const response = await axios.request(options);
-            console.log("Response", response.data)
+            //console.log("Response", response.data)
             setData(response.data.data);
             setIsLoading(false);
         } catch (error) {
